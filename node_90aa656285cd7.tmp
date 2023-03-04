@@ -1,0 +1,36 @@
+var letras = ['n', 'h', 'e', 'n', 'n']
+
+function fatorial(n) {
+    f= 1
+    for (var cont=1;cont <= n; cont++){
+        f *= cont
+    }
+    return f
+}
+
+
+
+var fatorialBaixo = 1
+for (var cont=0;cont<letras.length;cont++){
+    var repetidas = 0
+    var soUm = 0
+
+    for (letra=letras[cont];;){
+    //caso tenha mais de 1, ele repetiu
+    var temLetra = letras.indexOf(letra)
+    if (temLetra == -1) break;
+    }
+    if (soUm>1) {
+        repetidas += 1
+    }
+    letras.splice(letra)
+    soUm++
+
+    
+    fatorialBaixo *= fatorial(repetidas+1)
+    console.log(fatorialBaixo)
+    break
+}
+
+
+
